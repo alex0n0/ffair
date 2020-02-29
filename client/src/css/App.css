@@ -1,0 +1,286 @@
+:root {
+  --mainFontSize: 14px;
+  --headerHeight: 65px;
+  --minPageWidth: 350px;
+  --interactiveBoxShadow: 0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--mainFontSize);
+}
+
+.overflow-c {
+  overflow-x: hidden;
+}
+
+.page-c {
+  min-width: var(--minPageWidth);
+}
+
+.ui--layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ui--layout header {
+  flex: 0 0 auto;
+  height: var(--headerHeight);
+  z-index: 9000;
+  background-color: white;
+}
+
+.ui--layout header .container-fluid {
+  max-width: 1500px;
+}
+
+.ui--layout main {
+  flex: 1 1 auto;
+}
+
+.ui--layout footer {
+  flex: 0 0 auto;
+}
+
+.form-control {
+  border-color: black !important;
+}
+
+.form-control:focus {
+  box-shadow: var(--interactiveBoxShadow);
+}
+
+.button--transparent {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s box-shadow;
+}
+
+.button--transparent.button--black {
+  background-color: black;
+  color: white;
+}
+
+.button--transparent.button--black:disabled {
+  opacity: 0.5;
+}
+
+.button--transparent.button--social {
+  background-color: black;
+  color: var(--light);
+}
+
+.button--transparent.button--close {
+  position: relative;
+}
+
+.button--transparent.button--close::before, .button--transparent.button--close::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1px;
+  height: 60%;
+  background-color: white;
+}
+
+.button--transparent.button--close::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.button--transparent.button--close::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.button--transparent:focus {
+  outline: none;
+  box-shadow: var(--interactiveBoxShadow);
+}
+
+.btn {
+  font-size: var(--mainFontSize);
+}
+
+.btn.btn-link:hover {
+  color: red;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+header .dropdown-toggle {
+  background-color: transparent !important;
+  color: black !important;
+  border: none;
+  border-radius: 0px;
+  padding: 0px;
+  transition: 0.2s box-shadow;
+}
+
+header .dropdown-toggle:hover, header .dropdown-toggle:focus, header .dropdown-toggle:active, header .dropdown-toggle.active {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+header .dropdown-toggle:focus {
+  box-shadow: var(--interactiveBoxShadow) !important;
+}
+
+header .dropdown-toggle::after {
+  display: none;
+}
+
+header .dropdown-menu {
+  padding: 0px;
+  border: 1px solid black;
+  border-radius: 0px;
+  min-width: 5rem;
+}
+
+header .dropdown-menu .dropdown-item {
+  padding: 0px;
+}
+
+header .dropdown-menu .dropdown-item:hover, header .dropdown-menu .dropdown-item:focus {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+button.bg-primary:disabled:hover,
+.btn.btn-primary:disabled:hover {
+  background-color: var(--primary) !important;
+}
+
+button.bg-secondary:disabled:hover,
+.btn.btn-secondary:disabled:hover {
+  background-color: var(--secondary) !important;
+}
+
+button.bg-dark:disabled:hover,
+.btn.btn-dark:disabled:hover {
+  background-color: var(--dark) !important;
+}
+
+button.bg-light:disabled:hover,
+.btn.btn-light:disabled:hover {
+  background-color: var(--light) !important;
+}
+
+button.bg-success:disabled:hover,
+.btn.btn-success:disabled:hover {
+  background-color: var(--success) !important;
+}
+
+button.bg-danger:disabled:hover,
+.btn.btn-danger:disabled:hover {
+  background-color: var(--danger) !important;
+}
+
+button.bg-warning:disabled:hover,
+.btn.btn-warning:disabled:hover {
+  background-color: var(--warning) !important;
+}
+
+button.bg-info:disabled:hover,
+.btn.btn-info:disabled:hover {
+  background-color: var(--info) !important;
+}
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+.bg-black {
+  background-color: black !important;
+}
+
+.font-10 {
+  font-size: 10px !important;
+}
+
+.font-12 {
+  font-size: 12px !important;
+}
+
+.font-14 {
+  font-size: 14px !important;
+}
+
+.font-15 {
+  font-size: 15px !important;
+}
+
+.font-16 {
+  font-size: 16px !important;
+}
+
+.font-18 {
+  font-size: 18px !important;
+}
+
+.font-20 {
+  font-size: 20px !important;
+}
+
+.font-22 {
+  font-size: 22px !important;
+}
+
+.font-24 {
+  font-size: 24px !important;
+}
+
+.font-26 {
+  font-size: 26px !important;
+}
+
+.font-28 {
+  font-size: 28px !important;
+}
+
+.font-30 {
+  font-size: 30px !important;
+}
+
+.font-32 {
+  font-size: 32px !important;
+}
+
+.font-34 {
+  font-size: 34px !important;
+}
+
+.font-36 {
+  font-size: 36px !important;
+}
+
+.font-38 {
+  font-size: 38px !important;
+}
+
+.font-40 {
+  font-size: 40px !important;
+}
+
+.border-black {
+  border-color: black !important;
+}
+
+.modal-backdrop {
+  z-index: 10100;
+  background-color: white;
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  z-index: 10200;
+}
